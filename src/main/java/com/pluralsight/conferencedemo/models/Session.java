@@ -3,7 +3,8 @@ package com.pluralsight.conferencedemo.models;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity(name = "sessions")
+@Entity
+@Table(name = "sessions")
 public class Session {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
